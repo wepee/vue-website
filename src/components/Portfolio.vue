@@ -11,7 +11,6 @@
                     class="mx-auto my-auto py-auto"
                     color="grey lighten-4"
                     max-width="600"
-
             >
 
                 <v-img
