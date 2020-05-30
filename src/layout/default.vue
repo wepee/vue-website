@@ -2,6 +2,10 @@
     <v-app>
         <Banner/>
         <Navbar/>
+        <div class="container">
+            <slot />
+        </div>
+        <Footer/>
     </v-app>
 </template>
 
@@ -9,12 +13,13 @@
 
 <script>
 
-    import Banner from '@component/Banner'
-    import Navbar from '@component/Navbar'
+    import Banner from '@/components/Banner';
+    import Navbar from '@/components/Navbar';
+    import Footer from '@/components/Footer';
 
     export default {
-        name: "banner-nav-footer",
-        components :{Banner, Navbar,}
+        name: "Default",
+        components :{Banner, Navbar, Footer,},
     }
 </script>
 
