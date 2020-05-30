@@ -1,18 +1,17 @@
 <template>
   <div class="Parcours">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="nique ta mere"/>
+    <Timeline/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Timeline from '@/components/Timeline'
 export default {
   name: 'Parcours',
   components: {
-    HelloWorld
+    Timeline,
   }
 }
 </script>
