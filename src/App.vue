@@ -1,28 +1,23 @@
 <template>
   <v-app>
-    <Banner/>
-    <Navbar/>
-    <v-content>
-      <Portfolio/>
-
-
-
-    </v-content>  <HelloWorld/>
+    <component :is="layout">
+      <router-view/>
+    </component>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Portfolio from './components/Portfolio';
+const default_layout = "default";
 
 export default {
   name: 'App',
 
-  components: {
-    HelloWorld, Banner, Navbar, Portfolio
-  },
+  computed: {
+    layout() {
+      return(this.$route.meta.layout || default_layout) + '-layout';
+    }
+
+},
 
   data: () => ({
     //

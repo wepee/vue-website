@@ -1,30 +1,36 @@
 <template>
     <div>
-        <v-switch v-model="reverse" label="Toggle reverse"></v-switch>
-        <v-timeline :reverse="reverse" :dense="$vuetify.breakpoint.smAndDown">
+        <div class="row align-content-center">
+            <v-label>Parcours Scolaire</v-label>
+            <v-switch v-model="showPro" :color="showPro ? 'red' : 'blue'"></v-switch>
+            <v-label>Parcours professionnel</v-label>
+        </div>
+
+        <v-timeline v-show="!showPro" :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item
-                    v-for="n in 2"
-                    :key="n"
+                    v-for="etude in etudes"
+                    :key="etude.titre"
             >
-                <span slot="opposite">Tus eu perfecto</span>
+                <span slot="opposite">{{etude.annee}}</span>
                 <v-card class="elevation-2">
-                    <v-card-title class="headline">Lorem ipsum</v-card-title>
+                    <v-card-title class="headline">{{etude.etablissement}} | {{etude.titre}}</v-card-title>
                     <v-card-text>
-                        Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+                        {{etude.descriptif}}
                     </v-card-text>
                 </v-card>
             </v-timeline-item>
         </v-timeline>
-        <v-timeline :reverse="reverse" dense>
+        <v-timeline v-show="showPro" :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item
-                    v-for="n in 2"
-                    :key="n"
+                    v-for="pro in pros"
+                    :key="pro.titre"
+                    color="red"
             >
-                <span slot="opposite">Tus eu perfecto</span>
+                <span slot="opposite">{{pro.annee}}</span>
                 <v-card class="elevation-2">
-                    <v-card-title class="headline">Lorem ipsum</v-card-title>
+                    <v-card-title class="headline">{{pro.titre}} | {{pro.entreprise}}</v-card-title>
                     <v-card-text>
-                        Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+                        {{pro.descriptif}}
                     </v-card-text>
                 </v-card>
             </v-timeline-item>
@@ -36,7 +42,76 @@
     export default {
         name: "Timeline",
         data: () => ({
-            reverse: true,
+            showPro: false,
+            etudes: [
+                {
+                    etablissement :'Telecom Saint-etienne',
+                    titre :'Cycle ingénieur',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+                {
+                    etablissement :'Telecom Saint-etienne',
+                    titre :'Cycle ingénieur',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+                {
+                    etablissement :'Telecom Saint-etienne',
+                    titre :'Cycle ingénieur',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+                {
+                    etablissement :'Telecom Saint-etienne',
+                    titre :'Cycle ingénieur',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+
+            ],
+            pros: [
+                {
+                titre :'Chargé d\'affaire',
+                entreprise :'Inspire',
+                descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                annee : '2019 à Maintenant',
+                link :'',
+                },
+                {
+                    titre :'Conseiller de vente',
+                    entreprise :'AS Saint-Etienne',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+                {
+                    titre :'Agent polyvalent',
+                    entreprise :'Telecom Saint-etienne',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+                {
+                    titre :'Professeur Particulier',
+                    entreprise :'Telecom Saint-etienne',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+                {
+                    titre :'Agent de production',
+                    entreprise :'Noble-chocolat',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    annee : '2019 à Maintenant',
+                    link :'',
+                },
+
+            ],
         }),
     }
 </script>

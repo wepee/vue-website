@@ -4,7 +4,7 @@
             dark
     >
 
-        <div class="row">
+        <div class="row my-auto" id="navbar">
             <div class="d-flex align-center mr-12">
                 <v-img
                         alt="Logo telecom"
@@ -23,11 +23,12 @@
 
 
             <div class="ml-auto mr-auto">
-            <v-btn
-                    href="/home"
-                    text
-                 >Home
-            </v-btn>
+                <v-btn
+                        href="/home"
+                        text
+                >Home
+                </v-btn>
+
             <v-btn
                         href="/mon-parcours"
                         text
@@ -41,12 +42,12 @@
             </div>
 
             <v-btn
-                href="https://github.com/vuetifyjs/vuetify/releases/latest"
+                href="https://www.linkedin.com/in/aleb-adam"
                 target="_blank"
                 text
         >
 
-            <span class="mr-2">Latest Release</span>
+            <span class="mr-2">En savoir plus</span>
             <v-icon>mdi-open-in-new</v-icon>
         </v-btn>
         </div>
@@ -61,5 +62,7 @@
 </script>
 
 <style scoped>
-
+#navbar{
+    max-height: min-content;
+}
 </style>
