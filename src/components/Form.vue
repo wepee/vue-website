@@ -1,5 +1,5 @@
 <template>
- <v-container class="d-flex justify-center">
+ <v-container class="d-flex justify-center pt-5">
     <v-card min-width="50%">
             <div class="container">
                 <p class="display-2 pb-5">Contactez-moi</p>

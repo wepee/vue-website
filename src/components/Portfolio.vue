@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pa-5 text-center">
+    <v-container class="pa-5 text-center pb-12">
             <v-row class="fill-height flex-row" justify="center"
                    >
         <v-hover
@@ -107,11 +107,11 @@
                     link:'',
                 },
                 {
-                    nom: 'Projet 6',
+                    nom: 'Programme de Cryptographie',
                     date: '2018',
-                    description: 'Voici une description détaillée du projet (blablabla je suis trop fort)',
-                    techno: 'Vue.JS',
-                    image: '',
+                    description: 'Le but du programme est de réaliser des operations sur de (très) grands nombres à des fins d\'application cryptographique. Utilisation de la méthode d\'exponentiation modulaire rapide (« square-and-multiply » dans le but d\'effectuer une exponentiation modulaire',
+                    techno: 'C++',
+                    image: 'https://images.unsplash.com/photo-1457904375453-3e1fc2fc76f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
                     link:'',
                 },
                 {

@@ -39,7 +39,7 @@
             icons: [
                 {
                     logo : 'mdi-snapchat',
-                    link : 'www.snapchat.com/add/adam_aleb',
+                    link : 'https://www.snapchat.com/add/adam_aleb',
                 },
                 {
                     logo : 'mdi-email',
@@ -51,7 +51,7 @@
                 },
                 {
                     logo : 'mdi-linkedin',
-                    link : '',
+                    link : 'https://www.linkedin.com/in/aleb-adam/',
                 },
             ],
         }),

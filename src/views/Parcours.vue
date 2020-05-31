@@ -34,7 +34,7 @@
                 <v-card flat>
                     <div v-show="i===1"><Presentation/></div>
                     <div v-show="i===2"><Timeline/></div>
-                    <div v-show="i===3"><Timeline/></div>
+                    <div v-show="i===3"><Skills/></div>
                 </v-card>
             </v-tab-item>
         </v-tabs-items>
@@ -45,10 +45,12 @@
 // @ is an alias to /src
 import Timeline from '@/components/Timeline.vue'
 import Presentation from '@/components/Presentation.vue'
+import Skills from "../components/Skills";
 
 export default {
         name: 'Parcours',
-        components: { Timeline, Presentation,
+        components: {
+            Skills, Timeline, Presentation,
         },
         data () {
             return {
