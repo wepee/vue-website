@@ -1,7 +1,7 @@
 <template>
-    <v-app-bar
-            color="primary"
-            dark
+    <nav class="navbar navbar-dark bg-primary"
+         style="color : #1976d2;
+box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);"
     >
 
         <div class="row my-auto" id="navbar">
@@ -15,7 +15,7 @@
                         width="40"
                 />
 
-                <span class="ml-2">
+                <span class="ml-2"  style="color: white">
                 Projet web
             </span>
             </div>
@@ -47,11 +47,11 @@
         >
 
             <span class="mr-2">En savoir plus</span>
-            <v-icon>mdi-open-in-new</v-icon>
+            <v-icon style="color : white">mdi-open-in-new</v-icon>
         </v-btn>
         </div>
 
-    </v-app-bar>
+    </nav>
 </template>
 
 <script>
@@ -61,7 +61,12 @@
 </script>
 
 <style scoped>
-#navbar{
+nav{
     max-height: min-content;
+    color : #1976d2;
 }
+
+span.mr-2{
+        color: white;
+    }
 </style>
