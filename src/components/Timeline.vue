@@ -95,8 +95,8 @@
                 {
                     titre :'Diplôme CiTiSE',
                     etablissement :'IUT Saint-Etienne & Telecom Saint-etienne',
-                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    taches :[''],
+                    descriptif : 'Durant ce cursus j\'ai pus m\'initier à differentes technologies et valider : ',
+                    taches :['DU Cycle initial des technologies de l\'information','DUT Génie électrique et informatique industrielle', 'L2 mathématiques / physique'],
                     annee : '2017 à 2019',
                     link :'',
                     image :'https://pbs.twimg.com/profile_images/1214096982094077952/6oep7EyO_400x400.jpg',

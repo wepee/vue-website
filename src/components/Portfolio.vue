@@ -122,7 +122,7 @@
                         'J\'ai utilisé la bibliothèque CSS Vuetify pour le design et d3 Network pour les graphiques.',
                     techno: 'Vue.JS',
                     image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-                    link:'',
+                    link:'https://github.com/wepee/vue-website',
                 },
             ],
         }),

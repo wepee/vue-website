@@ -15,7 +15,7 @@
           Ressources
         </h1>
         <p class="subheading font-weight-regular">
-          Les ressources qui suivent m'ont aidé dans la réalisation de ce site
+          Les ressources qui suivent m'ont aidé dans la réalisation de ce site :
         </p>
       </v-col>
 
