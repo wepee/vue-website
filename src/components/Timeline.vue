@@ -21,7 +21,7 @@
                             <v-avatar
                                        size="80"
                                        tile
-                                       v-if="exp.image !== ''"
+                                       v-if="exp.image"
                             >
                                 <v-img :src="exp.image">
                                 </v-img>
@@ -32,7 +32,7 @@
                                 <v-card-text>
                                     {{exp.descriptif}}
                                 </v-card-text>
-                                <ul v-if="exp.taches != ''">
+                                <ul v-if="exp.taches">
                                     <li v-for="tache in exp.taches" :key="tache">{{ tache }} </li>
                                 </ul>
                             </div>
@@ -66,7 +66,6 @@
                     titre :'Cycle ingénieur',
                     etablissement :'Telecom Saint-etienne',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
                     image : 'https://josephchataignon.github.io/Ressources/Images/logoTSE.png',
@@ -78,7 +77,6 @@
                     titre :'Conseiller de vente',
                     etablissement :'AS Saint-Etienne',
                     descriptif : 'Démarcher les prospects pour promouvoir le service MoneyVerte\n',
-                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
                     image :'https://www.letelegramme.fr/ar/imgproxy.php/images/2018/05/15/saint-etienne-peak6-en-discussions-exclusives-pour-le-rachat_3946554.png?article=11959484&aaaammjj=11959484',
@@ -109,7 +107,6 @@
                     titre :'',
                     etablissement :'Professeur Particulier',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    taches :[''],
                     annee : '2017 à Maintenant',
                     link :'',
                     image :'https://pbs.twimg.com/profile_images/1196812413200457729/qJXhzQH9_400x400.png',
@@ -119,7 +116,6 @@
                     titre :'Agent de production',
                     etablissement :'Noble-chocolat',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    taches :[''],
                     annee : 'été 2019',
                     link :'',
                     image :'https://www.food.be/sites/default/files/styles/company_logo/public/companies/0012000000RYXd9AAH/01257000000VEN1AAO/0012000000RYXd9AAH.jpg?itok=vvPUCaJ4',
@@ -129,7 +125,6 @@
                     titre :'Classe préparatoire PTSI',
                     etablissement :'Lycée de l\'europe',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    taches :[''],
                     annee : '2016 à 2017',
                     link :'',
                     image :'https://file.diplomeo-static.com/file/00/00/01/40/14044.svg',

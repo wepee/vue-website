@@ -16,7 +16,7 @@
             >
 
                 <v-img
-                        v-if="projet.image !== ''"
+                        v-if="projet.image"
                         :aspect-ratio="16/9"
                         :src="projet.image"
                 >
@@ -115,11 +115,13 @@
                     link:'',
                 },
                 {
-                    nom: 'Projet6',
-                    date: '2018',
-                    description: 'Voici une description détaillée du projet',
+                    nom: 'Application web : Portfolio',
+                    date: '2020',
+                    description: 'Le site sur lequel vous naviguez actuellement est une application développée en Vue.JS.' +
+                        'Cette application fait office de CV/Portfolio en ligne et contient mes projets, mon parcours et mes coordonées' +
+                        'J\'ai utilisé la bibliothèque CSS Vuetify pour le design et d3 Network pour les graphiques.',
                     techno: 'Vue.JS',
-                    image: '',
+                    image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
                     link:'',
                 },
             ],

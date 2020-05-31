@@ -38,8 +38,8 @@
                             @blur="$v.checkbox.$touch()"
                     ></v-checkbox>
                     <div class ="container pt-5">
-                        <v-btn class="mr-4" @click="clear">clear</v-btn>
-                        <v-btn class="mr-4" @click="submit">submit</v-btn>
+                        <v-btn class="mr-4" @click="clear">effacer</v-btn>
+                        <v-btn class="mr-4" @click="submit">envoyer</v-btn>
                     </div>
                 </form>
             </div>

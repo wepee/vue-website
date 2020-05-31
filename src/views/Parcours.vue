@@ -11,7 +11,7 @@
 
             <v-tab href="#tab-1">
                 Etat Civil
-                <v-icon>mdi-head</v-icon>
+                <v-icon>mdi-account</v-icon>
             </v-tab>
 
             <v-tab href="#tab-2">
@@ -20,7 +20,7 @@
             </v-tab>
 
             <v-tab href="#tab-3">
-               Compétences ?
+               Compétences
                 <v-icon>mdi-brain</v-icon>
             </v-tab>
         </v-tabs>

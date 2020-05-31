@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="text-center">
+    <v-row class="text-center pt-10">
       <v-col cols="12">
         <v-img
           :src="require('../assets/logo.svg')"
@@ -12,16 +12,10 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          Ressources
         </h1>
-
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+          Les ressources qui suivent m'ont aidé dans la réalisation de ce site
         </p>
       </v-col>
 
@@ -30,12 +24,12 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          What's next?
+          Documentation
         </h2>
 
         <v-row justify="center">
           <a
-            v-for="(next, i) in whatsNext"
+            v-for="(next, i) in documentation"
             :key="i"
             :href="next.href"
             class="subheading mx-3"
@@ -51,12 +45,12 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Important Links
+          Tutoriels & Exemples
         </h2>
 
         <v-row justify="center">
           <a
-            v-for="(link, i) in importantLinks"
+            v-for="(link, i) in tutoriels"
             :key="i"
             :href="link.href"
             class="subheading mx-3"
@@ -72,7 +66,7 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
+          Framework
         </h2>
 
         <v-row justify="center">
@@ -96,54 +90,50 @@
     name: 'HelloWorld',
 
     data: () => ({
-      ecosystem: [
+      documentation: [
         {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
+          text: 'Vuetify',
+          href: 'https://vuetifyjs.com/fr-FR/introduction/guide/',
         },
         {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
+          text: 'VueJS',
+          href: 'https://vuejs.org/v2/guide/',
         },
         {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
+          text: 'D3 network',
+          href: 'https://github.com/emiliorizzo/vue-d3-network',
         },
       ],
-      importantLinks: [
+      tutoriels: [
         {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
+          text: 'Grafikart',
+          href: 'https://www.grafikart.fr',
         },
         {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
+          text: 'Utilisation de vidéos',
+          href: 'http://monbootstrap.fr/integrer-de-la-video-en-arriere-plan/',
         },
         {
           text: 'Made with Vuetify',
           href: 'https://madewithvuejs.com/vuetify',
         },
         {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
+          text: 'Layout et router',
+          href: 'https://medium.com/thewarmupio/bref-voici-comment-cr%C3%A9er-un-syst%C3%A8me-de-layout-avec-vue-et-vue-router-44673f132e74',
         },
       ],
-      whatsNext: [
+      ecosystem: [
         {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
+          text: 'Vuetify',
+          href: 'https://vuetifyjs.com/',
         },
         {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/layout/pre-defined',
+          text: 'D3 Network',
+          href: 'https://www.d3-graph-gallery.com/index.html',
         },
         {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
+          text: 'VueJS',
+          href: 'https://fr.vuejs.org/',
         },
       ],
     }),
