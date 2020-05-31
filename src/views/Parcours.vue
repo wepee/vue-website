@@ -32,7 +32,7 @@
                     :value="'tab-' + i"
             >
                 <v-card flat>
-                    <div v-show="i===1"><Timeline/></div>
+                    <div v-show="i===1"><Presentation/></div>
                     <div v-show="i===2"><Timeline/></div>
                     <div v-show="i===3"><Timeline/></div>
                 </v-card>
@@ -44,9 +44,11 @@
 <script>
 // @ is an alias to /src
 import Timeline from '@/components/Timeline.vue'
+import Presentation from '@/components/Presentation.vue'
+
 export default {
         name: 'Parcours',
-        components: { Timeline
+        components: { Timeline, Presentation,
         },
         data () {
             return {

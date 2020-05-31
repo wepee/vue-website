@@ -1,5 +1,6 @@
 <template>
-    <v-app>
+ <v-container class="d-flex justify-center">
+    <v-card min-width="50%">
             <div class="container">
                 <p class="display-2 pb-5">Contactez-moi</p>
                 <form>
@@ -42,9 +43,9 @@
                     </div>
                 </form>
             </div>
-    </v-app>
+    </v-card>
 
-
+ </v-container>
 </template>
 
 <script>

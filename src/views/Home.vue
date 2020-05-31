@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <H1 class="display-4">Mes projets</H1>
+    <div class="d-flex justify-center align-center py-8">
+      <H1 class="display-4">Mes projets</H1>
+    </div>
     <Portfolio/>
     <Form/>
   </div>

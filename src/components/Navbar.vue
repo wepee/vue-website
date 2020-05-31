@@ -26,18 +26,17 @@
                 <v-btn
                         href="/home"
                         text
-                >Home
+                ><router-link to='/home' style="color:white;text-decoration-line: none;">Home</router-link>
                 </v-btn>
 
             <v-btn
-                        href="/mon-parcours"
                         text
-                >Mon parcours
+                ><router-link to='/mon-parcours' style="color:white;text-decoration-line: none;">mon parcours</router-link>
                 </v-btn>
                 <v-btn
                         href="/ressources"
                         text
-                >Ressources
+                ><router-link to='/ressources' style="color:white;text-decoration-line: none;">Ressources</router-link>
                 </v-btn>
             </div>
 

@@ -1,5 +1,5 @@
 <template>
-    <v-card height="400px">
+    <v-card height="200px">
         <v-footer
                 absolute
                 :padless=true

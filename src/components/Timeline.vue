@@ -1,37 +1,29 @@
 <template>
-    <div>
+    <div class="pa-12">
         <div class="row align-content-center">
             <v-label>Parcours Scolaire</v-label>
             <v-switch v-model="showPro" :color="showPro ? 'red' : 'blue'"></v-switch>
             <v-label>Parcours professionnel</v-label>
         </div>
 
-        <v-timeline v-show="!showPro" :dense="$vuetify.breakpoint.smAndDown">
+        <v-timeline :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item
-                    v-for="etude in etudes"
-                    :key="etude.titre"
+                    v-for="exp in exps"
+                    :key="exp.titre"
+                    v-show="showPro || !exp.isPro"
+                    transition="fade-transition"
+                    :color="exp.isPro ? 'red' : 'blue'"
+
             >
-                <span slot="opposite">{{etude.annee}}</span>
-                <v-card class="elevation-2">
-                    <v-card-title class="headline">{{etude.etablissement}} | {{etude.titre}}</v-card-title>
+                <span slot="opposite">{{exp.annee}}</span>
+                <v-card class="elevation-4 ">
+                    <v-card-title class="headline">{{exp.etablissement}} | {{exp.titre}}</v-card-title>
                     <v-card-text>
-                        {{etude.descriptif}}
+                        {{exp.descriptif}}
                     </v-card-text>
-                </v-card>
-            </v-timeline-item>
-        </v-timeline>
-        <v-timeline v-show="showPro" :dense="$vuetify.breakpoint.smAndDown">
-            <v-timeline-item
-                    v-for="pro in pros"
-                    :key="pro.titre"
-                    color="red"
-            >
-                <span slot="opposite">{{pro.annee}}</span>
-                <v-card class="elevation-2">
-                    <v-card-title class="headline">{{pro.titre}} | {{pro.entreprise}}</v-card-title>
-                    <v-card-text>
-                        {{pro.descriptif}}
-                    </v-card-text>
+                    <ul v-if="exp.taches != ''">
+                            <li v-for="tache in exp.taches" :key="tache">{{ tache }} </li>
+                    </ul>
                 </v-card>
             </v-timeline-item>
         </v-timeline>
@@ -43,72 +35,81 @@
         name: "Timeline",
         data: () => ({
             showPro: false,
-            etudes: [
+            exps: [
                 {
-                    etablissement :'Telecom Saint-etienne',
-                    titre :'Cycle ingénieur',
+                    titre :'Chargé d\'affaire',
+                    etablissement :'Inspire',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :['Prospection et qualification du prospect','Suivi d\'étude, de l\'analyse du besoin à la fidélisation du client\n','Product Owner : gestion de projet agile'],
                     annee : '2019 à Maintenant',
                     link :'',
+                    isPro : true,
+
+                },{
+                    titre :'Cycle ingénieur',
+                    etablissement :'Telecom Saint-etienne',
+                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :[''],
+                    annee : '2019 à Maintenant',
+                    link :'',
+                    isPro : false,
                 },
                 {
-                    etablissement :'Telecom Saint-etienne',
-                    titre :'Cycle ingénieur',
+                    titre :'Diplôme CiTiSE',
+                    etablissement :'IUT Saint-Etienne & Telecom Saint-etienne',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    annee : '2019 à Maintenant',
+                    taches :[''],
+                    annee : '2017 à 2019',
                     link :'',
+                    isPro : false,
+
                 },
                 {
+                    titre :'Classe préparatoire',
                     etablissement :'Telecom Saint-etienne',
-                    titre :'Cycle ingénieur',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
-                },
-                {
-                    etablissement :'Telecom Saint-etienne',
-                    titre :'Cycle ingénieur',
-                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                    annee : '2019 à Maintenant',
-                    link :'',
+                    isPro : false,
+
                 },
 
-            ],
-            pros: [
-                {
-                titre :'Chargé d\'affaire',
-                entreprise :'Inspire',
-                descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
-                annee : '2019 à Maintenant',
-                link :'',
-                },
                 {
                     titre :'Conseiller de vente',
-                    entreprise :'AS Saint-Etienne',
+                    etablissement :'AS Saint-Etienne',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
+                    isPro : true,
                 },
                 {
                     titre :'Agent polyvalent',
-                    entreprise :'Telecom Saint-etienne',
+                    etablissement :'Telecom Saint-etienne',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
+                    isPro : true,
                 },
                 {
                     titre :'Professeur Particulier',
-                    entreprise :'Telecom Saint-etienne',
+                    etablissement :'Telecom Saint-etienne',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
+                    isPro : true,
                 },
                 {
                     titre :'Agent de production',
-                    entreprise :'Noble-chocolat',
+                    etablissement :'Noble-chocolat',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    taches :[''],
                     annee : '2019 à Maintenant',
                     link :'',
+                    isPro : true,
                 },
 
             ],

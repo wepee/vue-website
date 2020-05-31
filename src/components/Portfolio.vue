@@ -1,16 +1,18 @@
 <template>
-    <div class="flex-flow">
+    <v-container class="pa-5 text-center">
+            <v-row class="fill-height flex-row" justify="center"
+                   >
+        <v-hover
+                v-slot:default="{ hover }"
+                v-for="projet in projets"
+                :key="projet.nom"
+                transition ="fab-transition"
 
-
-    <div class="row ma-xl-auto">
-        <v-hover v-slot:default="{ hover }"
-             v-for="projet in projets"
-             :key="projet.nom"
     >
             <v-card
                     class="mx-auto my-auto py-auto"
                     color="grey lighten-4"
-                    max-width="600"
+                    max-width="450"
             >
 
                 <v-img
@@ -51,12 +53,10 @@
                         {{ projet.description }}
                     </div>
                 </v-card-text>
-
             </v-card>
         </v-hover>
-    </div>
-    </div>
-
+            </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -77,15 +77,20 @@
                     date: '2019',
                     description: 'Logiciel permettant d\'assurer plus facilement la maintenance de solutions SaaS WMS (warehouse Management System)\n' +
                         'Programmé en C++ avec le framework Qt',
-                    techno: 'C++ - Qt',
+                    techno: 'C++ | Qt',
                     image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1462&q=80',
                     link:'',
                 },
                 {
                     nom: "Solution de reservation de voyage",
                     date: '2019',
-                    description: 'Voici une description détaillée du projet',
-                    techno: 'C# - posgresSQL',
+                    description: 'Interface graphique permettant de plannifier un voyage.' +
+                        ' L\'utilisateur est invité à remplir les informations concernant' +
+                        ' le transport, l\'hebergement et les activités. On peut' +
+                        ' également inviter des collaborateurs sur le voyage de manière' +
+                        ' à pouvoir éditer à plusieurs les informations.' +
+                        ' \n Logiciel C# communicant avec une base de données PosgreSQL',
+                    techno: 'C# | posgresSQL',
                     image: 'https://images.unsplash.com/photo-1581094651181-35942459ef62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
                     link:'',
                 },
