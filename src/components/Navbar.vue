@@ -1,7 +1,8 @@
 <template>
-    <nav class="navbar navbar-dark bg-primary"
-         style="color : #1976d2;
-box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);"
+    <v-app-bar
+            color="blue accent-3"
+            dense
+            dark
     >
 
         <div class="row my-auto" id="navbar">
@@ -51,7 +52,28 @@ box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10
         </v-btn>
         </div>
 
-    </nav>
+        <v-menu
+                left
+                bottom
+        >
+            <template v-slot:activator="{ on }">
+                <v-btn icon v-on="on">
+                    <v-icon>mdi-dots-vertical</v-icon>
+                </v-btn>
+            </template>
+
+            <v-list>
+                <v-list-item
+                        v-for="n in 5"
+                        :key="n"
+                        @click="() => {}"
+                >
+                    <v-list-item-title>Option {{ n }}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-menu>
+
+    </v-app-bar>
 </template>
 
 <script>

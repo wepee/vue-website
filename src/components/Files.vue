@@ -80,7 +80,7 @@
 
                         <v-card class="v-banner__content d-flex justify-space-around" v-if="message.name==='Vidéo'">
                             <video autoplay="" muted="" loop="">
-                                <source src="@/assets/web.mp4"                            type="video/mp4">
+                                <source src="@/assets/web.mp4" type="video/mp4">
                             </video>
                         </v-card>
 

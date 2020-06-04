@@ -65,7 +65,7 @@
                 },{
                     titre :'Cycle ingénieur',
                     etablissement :'Telecom Saint-etienne',
-                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    descriptif : 'st ce que j\'ai fait blablabla j\'ai bien travaillé',
                     annee : '2019 à Maintenant',
                     link :'',
                     image : 'https://josephchataignon.github.io/Ressources/Images/logoTSE.png',
