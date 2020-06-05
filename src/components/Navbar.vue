@@ -25,9 +25,9 @@
 
             <div class="ml-auto mr-auto">
                 <v-btn
-                        href="/"
                         text
-                ><router-link to='/home' style="color:white;text-decoration-line: none;">Home</router-link>
+                >
+                    <router-link to='/home' style="color:white;text-decoration-line: none;">Home</router-link>
                 </v-btn>
 
             <v-btn
@@ -35,7 +35,6 @@
                 ><router-link to='/mon-parcours' style="color:white;text-decoration-line: none;">mon parcours</router-link>
                 </v-btn>
                 <v-btn
-                        href="/ressources"
                         text
                 ><router-link to='/ressources' style="color:white;text-decoration-line: none;">Ressources</router-link>
                 </v-btn>

@@ -19,6 +19,12 @@ routes = [
     component: Home
   },
   {
+    path: '/home',
+    name: 'Home',
+    meta: {layout : "default" },
+    component: Home
+  },
+  {
     path: '/about',
     name: 'About',
     meta: {layout : "no-banner"},
