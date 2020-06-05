@@ -25,7 +25,7 @@
 
             <div class="ml-auto mr-auto">
                 <v-btn
-                        href="/home"
+                        href="/"
                         text
                 ><router-link to='/home' style="color:white;text-decoration-line: none;">Home</router-link>
                 </v-btn>
