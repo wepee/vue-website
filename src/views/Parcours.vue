@@ -62,3 +62,9 @@ export default {
     }
 
 </script>
+
+<style scoped>
+    a.v-tab{
+        text-decoration-line: none;
+    }
+</style>

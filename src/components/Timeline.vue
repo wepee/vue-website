@@ -23,7 +23,7 @@
                                        tile
                                        v-if="exp.image"
                             >
-                                <v-img :src="exp.image">
+                                <v-img :src="exp.image" align="center">
                                 </v-img>
                             </v-avatar>
 

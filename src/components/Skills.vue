@@ -31,9 +31,8 @@
                     { id: 13, name:'Vente', _color:'orange' },
                     { id: 14, name:'Gestion de projet', _color:'orange' },
                     { id: 15, name:'Entrepreneuriat', _color:'orange' },
-                    { id: 16, name:'Travail d\'équipe', _color:'orange' },
-                    { id: 17, name:'Travail d\'équipe', _color:'orange' },
-                    { id: 18, name:'Travail d\'équipe', _color:'orange' },
+                    { id: 16, name:'Résolution de conflits', _color:'orange' },
+                    { id: 17, name:'Management', _color:'orange' },
                 ],
                 links: [
                     { sid: 1, tid: 3, _color:'red' },
@@ -51,7 +50,6 @@
                     { sid: 2, tid: 15, _color :'blue'  },
                     { sid: 2, tid: 16, _color :'blue'  },
                     { sid: 2, tid: 17, _color :'blue'  },
-                    { sid: 2, tid: 18, _color :'blue'  },
                 ],
                 options:
                     {

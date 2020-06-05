@@ -74,7 +74,7 @@
                         <v-divider></v-divider>
                         <v-card-text>
                             <ul v-if="message.files">
-                                <li v-for="file in message.files" :key="file"><a :href="file.link"> {{file.name}}</a></li>
+                                <li v-for="file in message.files" :key="file"><a :href="file.link" :download="file.name"> {{file.name}}</a></li>
                             </ul>
                         </v-card-text>
 
@@ -87,7 +87,7 @@
                         <v-card v-if="message.code">
                             <v-card-text v-for="code in message.code" :key="code">
                                 <h3 class="display-1 py-8">{{code.name}}</h3>
-                                <pre>{{code.content}}</pre>
+                                <pre><code class="flush : cpp">{{code.content}}</code></pre>
                             </v-card-text>
                         </v-card>
 
@@ -110,15 +110,15 @@
                     files: [
                         {
                             name: 'mon CV',
-                            link: '',
+                            link: '/src/assets/Adam_ALEB_CV.pdf',
                         },
                         {
                             name: 'Mon Zip',
-                            link: '',
+                            link: ' /src/assets/logo.png',
                         },
                         {
                             name: 'Photo de mon CV',
-                            link: '',
+                            link: 'https://media-exp1.licdn.com/dms/image/C5603AQGP7S6xMgHEoQ/profile-displayphoto-shrink_200_200/0?e=1596672000&v=beta&t=JdlyUrshgqXXOdU_B9dpWG0fh-vqNCMYfaMRRv9YTfs',
                         },
 
                     ],

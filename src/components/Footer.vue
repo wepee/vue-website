@@ -47,7 +47,7 @@
                 },
                 {
                     logo : 'mdi-github',
-                    link : '',
+                    link : 'https://github.com/wepee',
                 },
                 {
                     logo : 'mdi-linkedin',
