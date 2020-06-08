@@ -74,7 +74,7 @@
                         <v-divider></v-divider>
                         <v-card-text>
                             <ul v-if="message.files">
-                                <li v-for="file in message.files" :key="file"><a :href="file.link" :download="file.name"> {{file.name}}</a></li>
+                                <li v-for="file in message.files" :key="file"><a :href="file.link" download> {{file.name}}</a></li>
                             </ul>
                         </v-card-text>
 
@@ -109,12 +109,12 @@
                     total: 3,
                     files: [
                         {
-                            name: 'mon CV',
-                            link: '/src/assets/Adam_ALEB_CV.pdf',
+                            name: 'mon-CV',
+                            link: 'assets/Adam_ALEB_CV.pdf',
                         },
                         {
-                            name: 'Mon Zip',
-                            link: ' /src/assets/logo.png',
+                            name: 'Mon-Zip',
+                            link: '/assets/logo.png',
                         },
                         {
                             name: 'Photo de mon CV',
