@@ -28,7 +28,7 @@
                             </v-avatar>
 
                             <div class="d-flex-col">
-                                <v-card-title class="headline">{{exp.etablissement}} | {{exp.titre}}</v-card-title>
+                                <v-card-title class="headline"><span>ntm la pute gros fdp l'hestite surtout pas à manger tes morts</span></v-card-title>
                                 <v-card-text>
                                     {{exp.descriptif}}
                                 </v-card-text>

@@ -1,5 +1,5 @@
 <template>
-    <v-container style="max-width: 70%">
+    <v-container class="mx-8">
         <v-row justify="center">
             <v-subheader>Fichiers</v-subheader>
 
@@ -109,16 +109,16 @@
                     total: 3,
                     files: [
                         {
-                            name: 'mon-CV',
-                            link: 'assets/Adam_ALEB_CV.pdf',
+                            name: 'Mon CV',
+                            link: 'https://github.com/wepee/vue-website/raw/master/src/assets/Adam_ALEB_CV.pdf',
                         },
                         {
-                            name: 'Mon-Zip',
-                            link: '/assets/logo.png',
+                            name: 'Mon projet en zip',
+                            link: 'https://github.com/wepee/vue-website/archive/master.zip',
                         },
                         {
                             name: 'Photo de mon CV',
-                            link: 'https://media-exp1.licdn.com/dms/image/C5603AQGP7S6xMgHEoQ/profile-displayphoto-shrink_200_200/0?e=1596672000&v=beta&t=JdlyUrshgqXXOdU_B9dpWG0fh-vqNCMYfaMRRv9YTfs',
+                            link: 'https://github.com/wepee/vue-website/raw/master/src/assets/maPhoto.jpg',
                         },
 
                     ],

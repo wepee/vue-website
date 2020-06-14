@@ -1,14 +1,13 @@
 <template>
     <v-container class="pa-5 text-center pb-12">
-            <v-row class="fill-height flex-row" justify="center"
-                   >
+            <v-row class="fill-height flex-row" justify="center">
         <v-hover
                 v-slot:default="{ hover }"
                 v-for="projet in projets"
                 :key="projet.nom"
                 transition ="fab-transition"
-
-    >
+                class="mb-5"
+        >
             <v-card
                     class="mx-auto my-auto py-auto"
                     color="grey lighten-4"
