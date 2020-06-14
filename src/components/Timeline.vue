@@ -19,6 +19,7 @@
 
                         <div class="d-flex justify-space-around">
                             <v-avatar
+                                    class="hidden-lg-and-down"
                                        size="80"
                                        tile
                                        v-if="exp.image"
@@ -28,7 +29,7 @@
                             </v-avatar>
 
                             <div class="d-flex-col">
-                                <v-card-title class="headline">{{exp.titre}}</v-card-title>
+                                <v-card-title class="headline">{{exp.titre}} | {{exp.etablissement}}</v-card-title>
                                 <v-card-text>
                                     {{exp.descriptif}}
                                 </v-card-text>
