@@ -1,5 +1,5 @@
 <template>
-    <div class="pa-12">
+    <div class="pa-xl-12">
         <div class="d-inline-flex align-content-center">
             <v-label class="align-content-center">Ajouter les experiences professionelles</v-label>
             <v-switch v-model="showPro" :color="showPro ? 'red' : 'blue'"></v-switch>
@@ -15,11 +15,11 @@
 
             >
                 <span slot="opposite">{{exp.annee}}</span>
-                <v-card class="elevation-4">
+                <v-card class="elevation-4 pa-xl-5 ma-">
 
                         <div class="d-flex justify-space-around">
                             <v-avatar
-                                    class="hidden-lg-and-down"
+                                    class="hidden-xs-only"
                                        size="80"
                                        tile
                                        v-if="exp.image"
@@ -29,7 +29,8 @@
                             </v-avatar>
 
                             <div class="d-flex-col">
-                                <v-card-title class="headline">{{exp.titre}} | {{exp.etablissement}}</v-card-title>
+                                <v-card-title class="headline"><p>{{exp.titre}}</p></v-card-title>
+                                <v-card-title><p>{{exp.etablissement}}</p></v-card-title>
                                 <v-card-text>
                                     {{exp.descriptif}}
                                 </v-card-text>
@@ -56,7 +57,7 @@
                 {
                     titre :'Chargé d\'affaires',
                     etablissement :'Inspire',
-                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    descriptif : 'J\'occupe actuellement le poste de chargé d\'affaires à inspire et j\'y réalise les taches suivantes :',
                     taches :['Prospection et qualification du prospect','Suivi d\'étude, de l\'analyse du besoin à la fidélisation du client\n','Product Owner : gestion de projet agile'],
                     annee : '2019 à Maintenant',
                     link :'',
@@ -66,7 +67,7 @@
                 },{
                     titre :'Cycle ingénieur',
                     etablissement :'Telecom Saint-etienne',
-                    descriptif : 'st ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    descriptif : 'J\'étudie les nouvelles technologies à Telecom Saint-Etienne. Je compte me spécialiser en Informatique et réseaux',
                     annee : '2019 à Maintenant',
                     link :'',
                     image : 'https://josephchataignon.github.io/Ressources/Images/logoTSE.png',
@@ -96,7 +97,7 @@
                 {
                     titre :'Diplôme CiTiSE',
                     etablissement :'IUT Saint-Etienne & Telecom Saint-etienne',
-                    descriptif : 'Durant ce cursus j\'ai pus m\'initier à differentes technologies et valider : ',
+                    descriptif : 'Durant ce cursus j\'ai pus m\'initier à differentes technologies et valider les diplomes suivants: ',
                     taches :['DU Cycle initial des technologies de l\'information','DUT Génie électrique et informatique industrielle', 'L2 mathématiques / physique'],
                     annee : '2017 à 2019',
                     link :'',
@@ -105,8 +106,8 @@
 
                 },
                 {
-                    titre :'',
-                    etablissement :'Professeur Particulier',
+                    titre :'Professeur Particulier',
+                    etablissement :'',
                     descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
                     annee : '2017 à Maintenant',
                     link :'',
@@ -116,16 +117,17 @@
                 {
                     titre :'Agent de production',
                     etablissement :'Noble-chocolat',
-                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    descriptif : 'En travaillant en emballage et production, j\'ai développé les compétences suivantes :',
                     annee : 'été 2019',
                     link :'',
+                    taches :['Travail d\'équipe','Exercer sous pression'],
                     image :'https://www.food.be/sites/default/files/styles/company_logo/public/companies/0012000000RYXd9AAH/01257000000VEN1AAO/0012000000RYXd9AAH.jpg?itok=vvPUCaJ4',
                     isPro : true,
                 },
                 {
                     titre :'Classe préparatoire PTSI',
                     etablissement :'Lycée de l\'europe',
-                    descriptif : 'Voici ce que j\'ai fait blablabla j\'ai bien travaillé',
+                    descriptif : 'Je me suis bien amusé',
                     annee : '2016 à 2017',
                     link :'',
                     image :'https://file.diplomeo-static.com/file/00/00/01/40/14044.svg',
@@ -139,5 +141,8 @@
 </script>
 
 <style scoped>
-
+p{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
 </style>

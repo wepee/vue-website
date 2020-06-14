@@ -40,6 +40,20 @@
                     <div class ="container pt-5">
                         <v-btn class="mr-4" @click="clear">effacer</v-btn>
                         <v-btn class="mr-4" @click="submit">envoyer</v-btn>
+                        <v-snackbar
+                                v-model="snackbar"
+                        >
+                            {{ text }}
+
+                                <v-btn
+                                        text
+                                        color="white"
+                                        v-bind="attrs"
+                                        @click="snackbar = false"
+                                >
+                                    Fermer
+                                </v-btn>
+                        </v-snackbar>
                     </div>
                 </form>
             </div>
@@ -67,6 +81,8 @@
         },
 
         data: () => ({
+            snackbar: false,
+            text: 'Le message n\'a pas été envoyé',
             name: '',
             email: '',
             message: null,
@@ -104,7 +120,8 @@
 
         methods: {
             submit () {
-                this.$v.$touch()
+                this.$v.$touch();
+                this.snackbar = true;
             },
             clear () {
                 this.$v.$reset()
