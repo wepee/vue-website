@@ -1,7 +1,7 @@
 <template>
     <div class="pa-xl-12">
-        <div class="d-inline-flex align-content-center">
-            <v-label class="align-content-center">Ajouter les experiences professionelles</v-label>
+        <div class="d-inline-flex">
+            <v-label class="align-middle">Ajouter les experiences professionelles</v-label>
             <v-switch v-model="showPro" :color="showPro ? 'red' : 'blue'"></v-switch>
         </div>
 

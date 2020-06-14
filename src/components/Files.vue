@@ -118,7 +118,7 @@
                         },
                         {
                             name: 'Photo de mon CV',
-                            link: 'https://github.com/wepee/vue-website/raw/master/src/assets/maPhoto.jpg',
+                            link: 'https://raw.githubusercontent.com/wepee/vue-website/master/src/assets/maPhoto.jpg',
                         },
 
                     ],

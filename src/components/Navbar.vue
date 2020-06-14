@@ -36,7 +36,7 @@
                 <v-btn
                         href="https://www.linkedin.com/in/aleb-adam"
                         target="_blank"
-                        class="hidden-sm-and-down"
+                        class="hidden-sm-and-down mt-2"
                         text
                 >
                     <span class="mr-2">
