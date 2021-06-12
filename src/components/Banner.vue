@@ -10,7 +10,7 @@
                 <v-col class="text-center" cols="12">
                     <v-avatar size="100">
                         <img
-                                src="https://media-exp1.licdn.com/dms/image/C5603AQGP7S6xMgHEoQ/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=m7HNbD8KaBhmlS6BPWSgt2Zt2OOBEPV9rmqL7Yr6Pjs"
+                                src="@/assets/maPhoto.jpg"
                                 alt="adam"
                         >
                     </v-avatar>
