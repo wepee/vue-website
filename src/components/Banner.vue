@@ -10,6 +10,7 @@
                 <v-col class="text-center" cols="12">
                     <v-avatar size="100">
                         <img
+                                style="height: auto;"
                                 src="@/assets/maPhoto.jpg"
                                 alt="adam"
                         >
